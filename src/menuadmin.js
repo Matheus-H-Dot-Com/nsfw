@@ -1,30 +1,30 @@
 const menuadmin = (prefix, pushname) => {
- return `oiin aqui e o menu dos admins
- _obs para o bot executar esses comandos e nescessario dar adm para o bot_
+ return `oi! aqui e o menu dos corno
+ _obs para eu executar esses comandos e nescessario dar adm para mim
  
  ◪ *COMANDO DOS ADMINS*
  │
- ├─ ❏ ${prefix}opengc
- ├─ ❏ ${prefix}closegc
- ├─ ❏ ${prefix}promote
- ├─ ❏ ${prefix}demote
- ├─ ❏ ${prefix}tagall
- ├─ ❏ ${prefix}tagall2
- ├─ ❏ ${prefix}tagall3
- ├─ ❏ ${prefix}tagall4
- ├─ ❏ ${prefix}tagall5
- ├─ ❏ ${prefix}add
- ├─ ❏ ${prefix}kick
+ ├─ ❏ ${prefix}abrirgp
+ ├─ ❏ ${prefix}fechargp
+ ├─ ❏ ${prefix}promover
+ ├─ ❏ ${prefix}retiraradmin
+ ├─ ❏ ${prefix}totaldetag
+ ├─ ❏ ${prefix}totaldetag2
+ ├─ ❏ ${prefix}totaldetag3
+ ├─ ❏ ${prefix}totaldetag4
+ ├─ ❏ ${prefix}totaldetag5
+ ├─ ❏ ${prefix}adicionar
+ ├─ ❏ ${prefix}chutar
  ├─ ❏ ${prefix}listadmins
- ├─ ❏ ${prefix}linkgroup
- ├─ ❏ ${prefix}leave
- ├─ ❏ ${prefix}welcome
+ ├─ ❏ ${prefix}linkgp
+ ├─ ❏ ${prefix}saia
+ ├─ ❏ ${prefix}bemvindo
  ├─ ❏ ${prefix}nsfw
- ├─ ❏ ${prefix}leveling
- ├─ ❏ ${prefix}level
- ├─ ❏ ${prefix}delete
+ ├─ ❏ ${prefix}ativarniveis
+ ├─ ❏ ${prefix}nivel
+ ├─ ❏ ${prefix}deletar
  ├─ ❏ ${prefix}simih
- └─ ❏ ${prefix}ownergroup
+ └─ ❏ ${prefix}donogrupo
  `
 
 
