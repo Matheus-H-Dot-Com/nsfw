@@ -1,14 +1,13 @@
 const help = (prefix) => {
-	return `         *MATHEUS H O TOP*
+	return `         *Matheus H, O Top*
 
  INFO:✅
 
- *DONO* : MATHEUS H
+ *DONO* : Matheus Henrique
 
-
- *WHATSAPPS DOS PROPRIETÁRIOS* :
+ *WHATSAPP DO PROPRIETÁRIO* : 24999596722
  
- *DONO* (MATHEUS H): wa.me/5524999596722
+ *DONO* (Matheus H): wa.me/24999596722
  
 
 
@@ -21,17 +20,17 @@ const help = (prefix) => {
          【 $INÚTEIS* 】 :
 
   ➡ ${prefix}blocklist
-     【LISTA DE BLOCK】
+     【LISTA DE BLOQUEIO】
   ➡ ${prefix}chatlist
      【LISTA CHAT】❌
   ➡ ${prefix}ping
-     【PING】
-  ➡ ${prefix}bugreport
+     【MOSTRA O PING】
+  ➡ ${prefix}reportarbug
      【REPORTA BUG】❌
 
 
       
-      *ZOAÇÃO* :
+      *ZUERA* :
 
 
   ➡ ${prefix}%GADO
@@ -41,6 +40,8 @@ const help = (prefix) => {
   ➡ ${prefix}%NAMORARESSEANO
 
   ➡ ${prefix}%GAY
+  
+  ➡ ${prefix}travazap
 
 
 
@@ -48,10 +49,10 @@ const help = (prefix) => {
     【 *MAIS USADOS RECENTEMENTE* 】
   
   ➡ ${prefix}sticker
-    【FAZER FIGURINHA】
-  ➡ ${prefix}toimg
+    【TRANSOFORMA UMA IMAGEM EM FIGURINHA】
+  ➡ ${prefix}paraimg
     【CONVERTE FIGURINHA EM IMAGEM】
-  ➡ ${prefix}tomp3
+  ➡ ${prefix}paramp3
     【PEGAR ÁUDIO DE ALGUM VÍDEO】
 
  
@@ -92,7 +93,7 @@ const help = (prefix) => {
 
   
   ➡${prefix}hentai
-    【foto hentai】
+    【foto de hentai】
 
   ➡${prefix}randomhentaio
     【random hentai】
@@ -106,7 +107,7 @@ const help = (prefix) => {
 
          【 𝑶𝑼𝑻𝑹𝑶𝑺 】
   
-  ➡ ${prefix}send
+  ➡ ${prefix}mandar
   ➡ ${prefix}wame
   ➡ ${prefix}exe
   ➡ ${prefix}qrcode
@@ -121,44 +122,11 @@ const help = (prefix) => {
 
 
 
-          【 *FONTES* 】
-
-  ➡ ${prefix}bpink
-  ➡ ${prefix}marvellogo
-  ➡ ${prefix}snowwrite
-  ➡ ${prefix}3dtext
-  ➡ ${prefix}ninjalogo
-  ➡ ${prefix}water
-  ➡ ${prefix}firetext
-  ➡ ${prefix}logowolf
-  ➡ ${prefix}logowolf2
-  ➡ ${prefix}phlogo
-  ➡ ${prefix}glitch        𝑨 𝑴𝑨𝑰𝑶𝑹𝑰𝑨 𝑵𝑨̃𝑶 𝑷𝑬𝑮𝑨         
-  ➡ ${prefix}neonlogo
-  ➡ ${prefix}neonlogo2
-  ➡ ${prefix}lionlogo
-  ➡ ${prefix}jokerlogo
-  ➡ ${prefix}shadow
-  ➡ ${prefix}burnpaper
-  ➡ ${prefix}coffee
-  ➡ ${prefix}lovepaper
-  ➡ ${prefix}woodblock
-  ➡ ${prefix}qowheart
-  ➡ ${prefix}mutgrass
-  ➡ ${prefix}undergocean
-  ➡ ${prefix}woodenboards
-  ➡ ${prefix}wolfmetal
-  ➡ ${prefix}metalictglow
-  ➡ ${prefix}8bit
-  ➡ ${prefix}ttp
-  ➡ ${prefix}herrypotter
-  ➡ ${prefix}pubglogo
-  ➡ ${prefix}quotemaker
         
        【 *MEDIA* 】
   
 
-  ➡ ${prefix}trendtwit
+  ➡ ${prefix}tt
   ➡ ${prefix}randomkpop
      【FOTOS ALEATÓRIA DE KPOP🤢】
   ➡ ${prefix}ytsearch
@@ -168,50 +136,28 @@ const help = (prefix) => {
 
       【  *EDUCAÇÃO* 】
   
-  ➡ ${prefix}wiki
-  ➡ ${prefix}wikien
-  ➡ ${prefix}nulis
-  ➡ ${prefix}quotes
-  ➡ ${prefix}quotes2
-  ➡ ${prefix}artinama
+  ➡ ${prefix}pesquisar
+  ➡ ${prefix}pesquisaren
+  ➡ ${prefix}nomes
 
 
      【 *DOWNLOADER* 】
   
-  ➡ ${prefix}images
+  ➡ ${prefix}imagens
     【IMAGENS ALEATÓRIA】
   ➡ ${prefix}ytmp3
     【MP3】
   ➡ ${prefix}ytmp4
     【DOWNLOAD MP4(VIDEO)】
   ➡ ${prefix}tiktok
-  ➡ ${prefix}joox
          
-
-           *MEME*
-      
-
-
-  ➡  ${prefix}meme
-  ➡ 【MEME INDONÉSIO】
-  ➡  ${prefix}memeindo
-  ➡ 【MEMEINDO INDONESIO】
- 
-
 
 
 
      【 *MÚSICA* 】
   
-  ➡ ${prefix}lirik
-  ➡ ${prefix}chord
-
-
-
-       ➡ *ISLAM*
-  
-   ➡ ${prefix}quran
-
+  ➡ ${prefix}letras
+  ➡ ${prefix}acorde
 
 
 
@@ -244,14 +190,11 @@ const help = (prefix) => {
 
       【 *DIVERSÃO* 】
   
-  ➡ ${prefix}alay
-  ➡ ${prefix}gantengcek
-  ➡ ${prefix}watak
+  ➡ ${prefix}personagem
   ➡ ${prefix}hobby
-  ➡ ${prefix}game
-  ➡ ${prefix}bucin
-  ➡ ${prefix}trust
-  ➡ ${prefix}dare
+  ➡ ${prefix}jogo
+  ➡ ${prefix}verdade
+  ➡ ${prefix}desafio
   ➡ ${prefix}simi
 
 
@@ -260,15 +203,15 @@ const help = (prefix) => {
 
          【 *INFORMAÇÃO* 】
   
-  ➡ ${prefix}bahasa
-     【SABER TODOS CÓDIGO DE PAIS】
-  ➡ ${prefix}kodenegara
-  ➡ ${prefix}kbbi
-  ➡ ${prefix}fakta
-  ➡ ${prefix}infocuaca
-  ➡ ${prefix}infogempa
-  ➡ ${prefix}jadwaltvnow
-  ➡ ${prefix}covid
+  ➡ ${prefix}idiomas
+     【SABER TODOS CÓDIGO DE IDIOMAS】
+  ➡ ${prefix}codigoarea
+       【SABER TODOS OS DDD DO BRASIL】
+  ➡ ${prefix}pergunta
+  ➡ ${prefix}fato
+  ➡ ${prefix}clima
+  ➡ ${prefix}tvindonesia
+  ➡ ${prefix}covidinfo
 
 
           【 SÓ FUNCIONA COM O DONO 】
@@ -277,12 +220,11 @@ const help = (prefix) => {
   
    ➭ ${prefix}setprefix
      【MUDAR PREFIXO】
-   ➭ ${prefix}block
+   ➭ ${prefix}bloquear
      【BLOQUEAR】
    ➭ ${prefix}bc
-     【TM】
    ➭ ${prefix}bcgc
-     【TM SÓ PARA MEMBROS DO GP】
+     【SÓ PARA MEMBROS DO GP】
    ➭ ${prefix}clearall
      【APAGAR TODAS MSG】
 
