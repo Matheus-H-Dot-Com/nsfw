@@ -1,5 +1,5 @@
 const help = (prefix) => {
-	return `         *NABUTO LS O BRABO*
+	return `         *MATHEUS H O TOP*
 
  INFO:✅
 
