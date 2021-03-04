@@ -1752,10 +1752,10 @@ case 'timer':
 							reply('❌ *ERRO* ❌') 
 						}
 						break
-					case 'boquete':
+					case 'axilas':
 						try {
 							if (!isNsfw) return reply('❌ *Putaria ta off manow* ❌')
-							res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=BotWeA`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animearmpits`, {method: 'get'})
 							buffer = await getBuffer(res.url)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Q poha é essa'})
 						} catch (e) {
