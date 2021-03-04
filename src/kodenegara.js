@@ -2,7 +2,7 @@ const negara = (prefix, sender) => {
 	return `*A*
 
 Centro-Oeste
-– Distrito Federal (61)
+Distrito Federal (61)
 – Goiás (62 e 64)
 – Mato Grosso (65 e 66)
 – Mato Grosso do Sul (67)
