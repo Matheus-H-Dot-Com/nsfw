@@ -262,7 +262,7 @@ async function starts() {
 					ownerB: '[❗] Este comando só pode ser usado pelo Matheus H! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
-                                        daftarB: `── 「REGISTRE-SE」 ──\nEae mano, seguinte \nVocê não está registrado no banco de dados, você não vai poder usar quase nada de mim \n\nComando : ${prefix}registrar nome|idade\nExemplo : ${prefix}registrar Deid|4`,
+                                        daftarB: `── 「REGISTRE-SE」 ──\nEae mano, seguinte \nVocê não está registrado no banco de dados, você não vai poder usar quase nada de mim \n\nComando : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar Deid|4`,
 				}
 			}
     			const apakah = ['sim','não']
@@ -503,7 +503,7 @@ case 'timer':
 					}
 					break
                                 case 'cmmd':
-		if (args.length < 1) return reply ('exemplo de como se daftar: *daftar (seu nome|sua idade, exemplo: *daftar Deid|4')
+		if (args.length < 1) return reply ('exemplo de como se registrar: *registrar (seu nome|sua idade, exemplo: *registrar Deid|4')
 		break
 				case 'snowwrite':
 					var gh = body.slice(11)
@@ -1622,7 +1622,7 @@ case 'timer':
                                         try{
                                                 if (!isNsfw) return reply('❌ *NSFW Desativado* ❌')
                                                 if (!isUser) return reply(mess.only.daftarB)
-                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=BotWeA`, {method: 'get'})
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
                                                 buffer = await getBuffer(res.result)
                                                 client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Toma ai oq tu pediu, punheteiro...'})
                                         } catch (e) {
@@ -1700,7 +1700,7 @@ case 'timer':
 				case 'bunda':
 						try {
 							if (!isNsfw) return reply('❌ *PUTARIA DESATIVADA....* ❌')
-							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
+							res = await fetchJson(`'https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
 							buffer = await getBuffer(res.url)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Mano, vai pro xvideos, pqp'})
 						} catch (e) {
