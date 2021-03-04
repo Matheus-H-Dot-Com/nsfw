@@ -1622,7 +1622,7 @@ case 'timer':
                                         try{
                                                 if (!isNsfw) return reply('❌ *NSFW Desativado* ❌')
                                                 if (!isUser) return reply(mess.only.daftarB)
-                                                res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=BotWeA`, {method: 'get'})
                                                 buffer = await getBuffer(res.result)
                                                 client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Toma ai oq tu pediu, punheteiro...'})
                                         } catch (e) {
