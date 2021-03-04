@@ -7,7 +7,7 @@ const help = (prefix) => {
 
  *WHATSAPP DO PROPRIETÁRIO* : 24999596722
  
- *DONO* (Matheus H): wa.me/24999596722
+ *DONO* (Matheus H): wa.me/5524999596722
  
 
 
