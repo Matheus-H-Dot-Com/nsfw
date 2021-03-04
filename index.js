@@ -80,7 +80,7 @@ const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
             + 'NOME: Matheus H\n' // full name
             + 'CARGO: Dono;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=5524999596722 (24) 99959-6722 ID do WhatsApp + número de telefone
+            + 'TEL;type=CELL;type=VOICE;waid=5524999596722 (24) 99959-6722\n' // ID do WhatsApp + número de telefone
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
