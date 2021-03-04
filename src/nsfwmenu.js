@@ -1,17 +1,16 @@
 const nsfwmenu = (prefix, pushname) => {
-    return `Oiin resumindo aqui e o menu NSFW
-    ◪ *NSFW*
+    return `Opa, resumindo aq, esse aq é o cardápio da putaria
+    ◪ *PUTARIAS*
   │
-  ├─ ❏ ${prefix}nsfwbobs
+  ├─ ❏ ${prefix}peitos
   ├─ ❏ ${prefix}randomhentaio
-  ├─ ❏ ${prefix}nsfwtrap
-  ├─ ❏ ${prefix}nsfwass
-  ├─ ❏ ${prefix}nsfwbelly
-  ├─ ❏ ${prefix}nsfwsidebobs
-  ├─ ❏ ${prefix}nsfwahegao
-  ├─ ❏ ${prefix}nsfwthighs
-  ├─ ❏ ${prefix}nsfwarmpits
-  └─ ❏ ${prefix}nsfwfeets
+  ├─ ❏ ${prefix}travekin
+  ├─ ❏ ${prefix}bunda
+  ├─ ❏ ${prefix}peitolado
+  ├─ ❏ ${prefix}ahegao
+  ├─ ❏ ${prefix}coxas
+  ├─ ❏ ${prefix}axilas
+  └─ ❏ ${prefix}pes
 
   _obs para usar esses comandos ative o menu NSFW_\n _Digite_\n ${prefix}*nsfw 1*`
 
