@@ -2,7 +2,7 @@ const negara = (prefix, sender) => {
 	return `*A*
 
 Centro-Oeste
-Distrito Federal (61)
+- Distrito Federal (61)
 – Goiás (62 e 64)
 – Mato Grosso (65 e 66)
 – Mato Grosso do Sul (67)
@@ -36,7 +36,7 @@ Sudeste
 Sul
 – Paraná (41, 42, 43, 44, 45 e 46)
 – Rio Grande do Sul (51, 53, 54 e 55)
-– Santa Catarina (47, 48 e 49)
+– Santa Catarina (47, 48 e 49)`
 }
 
 exports.negara = negara
