@@ -1700,7 +1700,7 @@ case 'timer':
 				case 'bunda':
 						try {
 							if (!isNsfw) return reply('❌ *PUTARIA DESATIVADA....* ❌')
-							res = await fetchJson(`'https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
 							buffer = await getBuffer(res.url)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Mano, vai pro xvideos, pqp'})
 						} catch (e) {
@@ -1752,10 +1752,10 @@ case 'timer':
 							reply('❌ *ERRO* ❌') 
 						}
 						break
-					case 'axilas':
+					case 'boquete':
 						try {
 							if (!isNsfw) return reply('❌ *Putaria ta off manow* ❌')
-							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animearmpits`, {method: 'get'})
+							res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwblowjob?apikey=BotWeA`, {method: 'get'})
 							buffer = await getBuffer(res.url)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Q poha é essa'})
 						} catch (e) {
