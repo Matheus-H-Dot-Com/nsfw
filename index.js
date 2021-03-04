@@ -262,7 +262,7 @@ async function starts() {
 					ownerB: '[❗] Este comando só pode ser usado pelo Matheus H! ❌',
 					admin: '[❗] Este comando só pode ser usado por administradores de grupo! ❌',
 					Badmin: '[❗] Este comando só pode ser usado quando o bot se torna administrador! ❌',
-                                        daftarB: `── 「REGISTRE-SE」 ──\nEae mano, seguinte \nVocê não está registrado no banco de dados, você não vai poder usar quase nada de mim \n\nComando : ${prefix}daftar nome|idade\nExemplo : ${prefix}daftar Deid|4`,
+                                        daftarB: `── 「REGISTRE-SE」 ──\nEae mano, seguinte \nVocê não está registrado no banco de dados, você não vai poder usar quase nada de mim \n\nComando : ${prefix}registrar nome|idade\nExemplo : ${prefix}registrar Deid|4`,
 				}
 			}
     			const apakah = ['sim','não']
