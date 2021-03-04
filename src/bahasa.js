@@ -4,54 +4,54 @@ const bahasa = (prefix, sender) => {
 	*Codigo       Pais*
     sq        Albanes
     ar        Arabe
-    hy        Armenian
-    ca        Catalan
-    zh        Chinese
-    zh-cn     Chinese (China)
-    zh-tw     Chinese (Taiwan)
-    zh-yue    Chinese (Cantonese)
-    hr        Croatian
-    cs        Czech
-    da        Danish
-    nl        Dutch
-    en        English
-    en-au     English (Australia)
-    en-uk     English (United Kingdom)
-    en-us     English (United States)
+    hy        Armenio
+    ca        Catalao
+    zh        Chines
+    zh-cn     Chines (China)
+    zh-tw     Chines (Taiwan)
+    zh-yue    Chines (Cantonese)
+    hr        Croata
+    cs        Tcheco
+    da        Dinamarques
+    nl        Holandes
+    en        Ingles
+    en-au     Ingles (Australia)
+    en-uk     Ingles (Reino Unido)
+    en-us     Ingles (Estados Unidos)
     eo        Esperanto
-    fi        Finnish
-    fr        French
-    de        German
-    el        Greek
-    ht        Haitian Creole
-    hi        Hindi
-    hu        Hungarian
-    is        Icelandic
-    id        Indonesian
-    it        Italian
-    ja        Japanese
-    ko        Korean
+    fi        Finlandes
+    fr        Frances
+    de        Alemao
+    el        Grego
+    ht        Haitiano
+    hi        Indiano
+    hu        Hungario
+    is        Islandes
+    id        Indonesio
+    it        Italiano
+    ja        Japones
+    ko        Koreano
     la        Latin
-    lv        Latvian
-    mk        Macedonian
-    no        Norwegian
-    pl        Polish
-    pt        Portuguese
-    pt-br     Portuguese (Brazil)
-    ro        Romanian
-    ru        Russian
-    sr        Serbian
-    sk        Slovak
-    es        Spanish
-    es-es     Spanish (Spain)
-    es-us     Spanish (United States)
-    sw        Swahili
-    sv        Swedish
+    lv        Letao
+    mk        Macedonio
+    no        Noruegues
+    pl        Polones
+    pt        Portugues
+    pt-br     Portugues (Brasil)
+    ro        Romeno
+    ru        Russo
+    sr        Serbio
+    sk        Eslovaco
+    es        Espanhol
+    es-es     Espanhol (Espanha)
+    es-us     Espanhol (Estados Unidos)
+    sw        Suaili
+    sv        Sueco
     ta        Tamil
     th        Thai
-    tr        Turkish
-    vi        Vietnamese
-    cy        Welsh`
+    tr        Turques
+    vi        Vietnames
+    cy        Gales`
 }
 
 exports.bahasa = bahasa
