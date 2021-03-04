@@ -503,7 +503,7 @@ case 'timer':
 					}
 					break
                                 case 'cmmd':
-		if (args.length < 1) return reply ('exemplo de como se daftar: *daftar (seu nome|sua idade, exemplo: *daftar Deid|4')
+		if (args.length < 1) return reply ('exemplo de como se registrar: *registrar (seu nome|sua idade, exemplo: *registrar Deid|4')
 		break
 				case 'snowwrite':
 					var gh = body.slice(11)
@@ -1622,7 +1622,7 @@ case 'timer':
                                         try{
                                                 if (!isNsfw) return reply('❌ *NSFW Desativado* ❌')
                                                 if (!isUser) return reply(mess.only.daftarB)
-                                                res = await fetchJson(`https://tobz-api.herokuapp.com/nsfwtrap?apikey=BotWeA`, {method: 'get'})
+                                                res = await fetchJson(`https://tobz-api.herokuapp.com/api/nsfwtrap?apikey=BotWeA`, {method: 'get'})
                                                 buffer = await getBuffer(res.result)
                                                 client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Toma ai oq tu pediu, punheteiro...'})
                                         } catch (e) {
