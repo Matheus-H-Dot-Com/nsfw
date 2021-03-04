@@ -78,9 +78,9 @@ const { othermenu } require('./database/menu/othermenu')*/
 /******LOAD OF VCARD INPUT******/
 const vcard = 'BEGIN:VCARD\n' // metadata of the contact card
             + 'VERSION:3.0\n' 
-            + 'FN:ninem gostoso\n' // full name
-            + 'ORG:Owner Bot;\n' // the organization of the contact
-            + 'TEL;type=CELL;type=VOICE;waid=556993733828 (69) 9373-3829\n' // ID do WhatsApp + número de telefone
+            + 'NOME: Matheus H\n' // full name
+            + 'CARGO: Dono;\n' // the organization of the contact
+            + 'TEL;type=CELL;type=VOICE;waid=5524999596722 (24) 99959-6722 ID do WhatsApp + número de telefone
             + 'END:VCARD'
 /******END OF VCARD INPUT******/
 
