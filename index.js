@@ -593,7 +593,7 @@ case 'timer':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
-					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=${tels}`, {method: 'get'})
+					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&titles=${tels}&format=json`, {method: 'get'})
 					reply(anu.result)
 					break	
 				case 'pesquisaen':
