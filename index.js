@@ -37,6 +37,7 @@ const tiktod = require('tiktok-scraper')
 const ffmpeg = require('fluent-ffmpeg')
 const { removeBackgroundFromImageFile } = require('remove.bg')
 const imgbb = require('imgbb-uploader')
+const lolis = require('lolis.life')
 const loli = new lolis()
 const speed = require('performance-now')
 /******END OF NPM PACKAGE INPUT******/
