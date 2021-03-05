@@ -296,7 +296,7 @@ async function starts() {
 			    return url.match(new RegExp(/https?:\/\/(www\.)?[-a-zA-Z0-9@:%._+~#=]{1,256}\.[a-zA-Z0-9()]{1,6}\b([-a-zA-Z0-9()@:%_+.~#?&/=]*)/, 'gi'))
 			}
 			const reply = (teks) => {
-				client.sendMessage(from, teks, text, {quoted:mek})
+				client.sendMessage(from, teks, {quoted:mek})
 			}
 			const sendMess = (hehe, teks) => {
 				client.sendMessage(hehe, teks, text)
@@ -594,7 +594,7 @@ case 'timer':
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
 					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&titles=${tels}&format=json`, {method: 'get'})
-					reply(anu.result)
+					reply(anu.batchcomplete)
 					break	
 				case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
