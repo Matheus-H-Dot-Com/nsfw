@@ -11,6 +11,10 @@ const nsfwmenu = (prefix, pushname) => {
   ├─ ❏ ${prefix}coxas
   ├─ ❏ ${prefix}axilas
   └─ ❏ ${prefix}pes
+  └─ ❏ ${prefix}abraco
+  └─ ❏ ${prefix}choro
+  └─ ❏ ${prefix}beijo
+  └─ ❏ ${prefix}mamada
 
   _obs para usar esses comandos ative o menu NSFW_\n _Digite_\n ${prefix}*nsfw 1*`
 
