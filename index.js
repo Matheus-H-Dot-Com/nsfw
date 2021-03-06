@@ -748,7 +748,7 @@ case 'timer':
                 if (!iUser) return reply(mess.only.daftarB)
                 client.sendMessage(from, data, image, {quoted: mek, caption: body.slice(7)})
                 break
-				case 'anunciar':
+				case 'tts':
 				   client.updatePresence(from, Presence.recording) 
 				   if (args.length < 1) return client.sendMessage(from, 'especifique se é PT, IT, EN...', text, {quoted: mek})
                                    if (!isUser) return reply(mess.only.daftarB)
