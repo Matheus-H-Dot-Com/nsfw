@@ -1724,7 +1724,7 @@ case 'timer':
 				case 'bunda':
 						try {
 							if (!isNsfw) return reply('❌ *PUTARIA DESATIVADA....* ❌')
-							res = await fetchJson(`'https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
+							res = await fetchJson(`https://meme-api.herokuapp.com/gimme/animebooty`, {method: 'get'})
 							buffer = await getBuffer(res.url)
 							client.sendMessage(from, buffer, image, {quoted: mek, caption: 'Mano, vai pro xvideos, pqp'})
 						} catch (e) {
