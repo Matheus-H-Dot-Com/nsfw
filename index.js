@@ -2136,14 +2136,6 @@ case 'timer':
 						console.log(color('[AVISO]','red'), 'Comando não registrado por:', color(sender.split('@')[0]))
 					}
                            }
-	{ handleGetJson(https://pt.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=${tels})
-  console.log("inside handleGetJson");
-  fetch(`./fr.json`, {
-      headers : { 
-        'Content-Type': 'application/json',
-        'Accept': 'application/json'
-       }
-
     })
     .then((response) => response.json())
     .then((messages) => {console.log("messages");});
