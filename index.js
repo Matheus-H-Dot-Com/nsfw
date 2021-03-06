@@ -593,8 +593,8 @@ case 'timer':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
-					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=${tels}`, {method: 'getJSON'})
-					reply(anu.extract)
+					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=${tels}`, {method: 'getJSON'})
+					reply(anu.wikitext)
 				        then(res => console.log(res))
 				        then(json => {
                                         console.log('res', json);
