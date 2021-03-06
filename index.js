@@ -4,7 +4,6 @@
 * Tambahin ya zhayank
 * Jan numpang nama doank
 * Baca readme nya biar gk tanya tanya
-
 - What's New?
 * Change Arugaz prefix & Fix Fitnah & Fix Ping
 */
@@ -593,8 +592,8 @@ case 'timer':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
-					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&titles=${tels}&format=json`, {method: 'get'})
-					reply(anu.query)
+					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&prop=revisions&rvprop=content&format=json&titles=${tels}`, {method: 'get'})
+					reply(anu.wikitext)
 					break	
 				case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
