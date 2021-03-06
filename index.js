@@ -2136,9 +2136,6 @@ case 'timer':
 						console.log(color('[AVISO]','red'), 'Comando não registrado por:', color(sender.split('@')[0]))
 					}
                            }
-    .then((response) => response.json())
-    .then((messages) => {console.log("messages");});
-}
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
