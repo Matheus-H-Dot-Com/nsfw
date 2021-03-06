@@ -596,7 +596,7 @@ case 'timer':
 					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=${tels}`, {method: 'getJSON'})
 					reply(anu.extract)
 			}
-				        then(res => console.log(res)
+				        then(res => console.log(res))
 				        then(json => {
                                         console.log('res', json);
         }).catch(err => {
