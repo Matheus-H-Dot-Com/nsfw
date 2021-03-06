@@ -595,7 +595,6 @@ case 'timer':
                                         if (!isUser) return reply(mess.only.daftarB)				
 					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=${tels}`, {method: 'getJSON'})
 					reply(anu.extract)
-					break
 			}
 				        then(res => console.log(res))
 				        then(json => {
@@ -604,8 +603,8 @@ case 'timer':
             console.error(err);
             return ReE(res, err.message, 500);
         })
-		}
-				case 'pesquisaen':
+			                break
+			                case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(8)		
 			                if (!isUser) return reply(mess.only.daftarB)
