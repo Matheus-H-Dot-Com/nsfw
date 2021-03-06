@@ -1164,6 +1164,13 @@ case 'timer':
                hasil = `PORCERTAGEM DE GADISSE : *${body.slice(1)}*\n\nVOCÊ É: : *${random}%* GADO(A)😳`
               reply(hasil)
                 break
+	       case '%admgado':
+              client.updatePresence(from, Presence.composing) 
+              if (!isUser) return reply(mess.only.daftarB)
+                random = `${Math.floor(Math.random() * 100)}`
+               hasil = `VAMOS VER O QUÃO GADO É O ADMIN: *${body.slice(1)}*\n\nO ADMIN É: *${random}%* GADO(A)😳`
+              reply(hasil)
+                break
                case '%corno':
 			   case '%corna':
               client.updatePresence(from, Presence.composing) 
