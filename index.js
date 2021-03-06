@@ -599,10 +599,10 @@ case 'timer':
 				        then(res => console.log(res)
 				        then(json => {
                                         console.log('res', json);
-        }.catch(err => {
+        }).catch(err => {
             console.error(err);
             return ReE(res, err.message, 500);
-        };
+        });
 					break	
 				case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
