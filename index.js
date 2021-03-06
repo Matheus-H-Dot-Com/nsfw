@@ -2133,10 +2133,10 @@ case 'timer':
 						console.log(muehe)
 						reply(muehe)
 					} else {
-						console.log(color('[WARN]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
+						console.log(color('[AVISO]','red'), 'Comando não registrado por:', color(sender.split('@')[0]))
 					}
                            }
-	{ handleGetJson()
+	{ handleGetJson(https://pt.wikipedia.org/w/api.php?action=query&prop=extracts&format=json&exintro=&titles=${tels})
   console.log("inside handleGetJson");
   fetch(`./fr.json`, {
       headers : { 
