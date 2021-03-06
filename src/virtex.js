@@ -1,5 +1,5 @@
 const virtex = (prefix, pushname) => {
-	return `Hp kalian akan saya hack
+	return `Rirushima nagazap SOFRA AS CONSEQUENCIAS DO SAULLO PUTOO!!!!
 
 
 
