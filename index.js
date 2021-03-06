@@ -603,8 +603,7 @@ case 'timer':
         }).catch(err => {
             console.error(err);
             return ReE(res, err.message, 500);
-        });
-			{
+        }
 				case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(8)		
