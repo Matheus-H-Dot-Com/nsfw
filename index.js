@@ -2136,6 +2136,18 @@ case 'timer':
 						console.log(color('[WARN]','red'), 'Unregistered Command from', color(sender.split('@')[0]))
 					}
                            }
+			handleGetJson(){
+  console.log("inside handleGetJson");
+  fetch(`./fr.json`, {
+      headers : { 
+        'Content-Type': 'application/json',
+        'Accept': 'application/json'
+       }
+
+    })
+    .then((response) => response.json())
+    .then((messages) => {console.log("messages");});
+}
 		} catch (e) {
 			console.log('Error : %s', color(e, 'red'))
 		}
