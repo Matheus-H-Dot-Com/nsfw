@@ -236,8 +236,8 @@ async function starts() {
 			const from = mek.key.remoteJid
 			const type = Object.keys(mek.message)[0]
 			const { text, extendedText, contact, location, liveLocation, image, video, sticker, document, audio, product } = MessageType
-			const time = moment.tz('Asia/Jakarta').format('DD/MM HH:mm:ss')
-			const date = moment.tz('Asia/Jakarta').format('DD,MM,YY')
+			const time = moment.tz('Brazil/Brasilia').format('DD/MM HH:mm:ss')
+			const date = moment.tz('Brazil/Brasilia').format('DD,MM,YY')
 			body = (type === 'conversation' && mek.message.conversation.startsWith(prefix)) ? mek.message.conversation : (type == 'imageMessage') && mek.message.imageMessage.caption.startsWith(prefix) ? mek.message.imageMessage.caption : (type == 'videoMessage') && mek.message.videoMessage.caption.startsWith(prefix) ? mek.message.videoMessage.caption : (type == 'extendedTextMessage') && mek.message.extendedTextMessage.text.startsWith(prefix) ? mek.message.extendedTextMessage.text : ''
 			budy = (type === 'conversation') ? mek.message.conversation : (type === 'extendedTextMessage') ? mek.message.extendedTextMessage.text : ''
 			const command = body.slice(1).trim().split(/ +/).shift().toLowerCase()
@@ -1387,7 +1387,7 @@ case 'timer':
 					var umure = reg.split("|")[1];
 						user.push(sender)
 						fs.writeFileSync('./database/json/user.json', JSON.stringify(user))
-						client.sendMessage(from, `\`\`\`Boa mano, tu se registrou com SN: TM08GK8PPHBSJDH10J\`\`\`\n\n\`\`\`Na hora ${date} ${time} (Horario da indonésia, pq sim\`\`\`\n\`\`\`[Seu nome]: ${jeneng}\`\`\`\n\`\`\`[Seu Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Sua idade, ctz q mentiu]: ${umure}\`\`\`\n\`\`\`Para me usar\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`envie ${prefix}ajuda\`\`\`\n\`\`\`\nTotal de gays ${user.length}\`\`\``, text, {quoted: mek})
+						client.sendMessage(from, `\`\`\`Boa mano, tu se registrou com sucesso!\`\`\`\n\n\`\`\`Na hora ${date} ${time} (Horario de Brasilia)\`\`\`\n\`\`\`[Seu nome]: ${jeneng}\`\`\`\n\`\`\`[Seu Número]: wa.me/${sender.split("@")[0]}\`\`\`\n\`\`\`[Sua idade, ctz q mentiu]: ${umure}\`\`\`\n\`\`\`Para me usar\`\`\`\n\`\`\`Por favor\`\`\`\n\`\`\`envie ${prefix}ajuda\`\`\`\n\`\`\`\nTotal de gays ${user.length}\`\`\``, text, {quoted: mek})
 					break
                                 case 'bemvindo':
 					if (!isGroup) return reply(mess.only.group)
