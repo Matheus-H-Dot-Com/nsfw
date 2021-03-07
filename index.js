@@ -602,7 +602,7 @@ case 'timer':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(8)		
 			                if (!isUser) return reply(mess.only.daftarB)
-					anu = await fetchJson(`https://arugaz.my.id/api/wikien?q=${tels}`, {method: 'get'})
+					anu = await fetchJson(`https://arugaz.my.id/api/wikien?q=${tels}`, {method: 'getJSON'})
 					reply(anu.result)
 					break				
 				case 'ytmp3':
