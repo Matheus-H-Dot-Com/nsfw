@@ -595,7 +595,7 @@ case 'timer':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
-					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&titles=${tels}&prop=extracts&format=json&exintro=1`, {method: 'getJSON'})
+					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=5&q=${tels}`, {method: 'getJSON'})
 					reply(anu.extract)
 				        then(res => console.log(res))
 				        then(json => {
