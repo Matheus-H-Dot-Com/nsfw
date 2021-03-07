@@ -610,10 +610,9 @@ case 'timer':
         var msg = twiml.message(body["Heading"]+"\n\n"+body["Abstract"]);
             res.writeHead(200, {'Content-Type': 'text/xml'});
           res.end(twiml.toString());
-      })
+      });
 
 }
-			                break
 			                case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(8)		
