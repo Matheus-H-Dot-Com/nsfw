@@ -596,6 +596,56 @@ case 'timer':
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
 					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`, {method: 'getJSON'})
+					function Index({ data, error }) {
+  return (
+    <>
+      {error && <p>{error}</p>}
+      <pre>
+        <code>{JSON.stringify(data, null, 4)}</code>
+      </pre>
+    </>
+  );
+}
+
+export async function getStaticProps() {
+  let data = [];
+  let error = "";
+  try {
+    const res = await fetch(
+      "https://www.ajmadison.com/product3.0/packages.index.json.php?sku=RF28R7351SR",
+      {
+        method: "GET",
+        headers: {
+          // update with your user-agent
+          "User-Agent":
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36", 
+          Accept: "application/json; charset=UTF-8",
+        },
+      }
+    );
+
+    data = await res.json();
+  } catch (e) {
+    error = e.toString();
+  }
+
+  return {
+    props: {
+      data,
+      error,
+    },
+  };
+}
+
+  return {
+    props: {
+      data,
+      error,
+    },
+  };
+}
+
+export default Index;
 					var obj = anu.parse();
 					reply(anu.Text)
 		                        break
