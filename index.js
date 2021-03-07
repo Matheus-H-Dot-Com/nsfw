@@ -603,9 +603,9 @@ case 'timer':
                                         body = JSON.parse(body)  
                                         if(body["Abstract"] == ""){
                                         body["Abstract"]= body["RelatedTopics"][0]["Text"]
-                                        var msg = twiml.message(body["Heading"]+"\n\n"+body["Abstract"]);
-                                        res.writeHead(200, {'Content-Type': 'text/xml'});
-                                        res.end(twiml.toString());
+                                        var msg = twiml.message(body["Heading"]+"\n\n"+body["Abstract"])
+                                        res.writeHead(200, {'Content-Type': 'text/xml'})
+                                        res.end(twiml.toString())
 				        break
 			                case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
