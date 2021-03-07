@@ -595,8 +595,7 @@ case 'timer':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
-					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`, {method: 'get'})
-					var obj = JSON.parse(`ttps://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`);
+					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`, {method: 'getJSON'})
 					reply(anu.Text)
 		                        break
 			                case 'pesquisaen':
