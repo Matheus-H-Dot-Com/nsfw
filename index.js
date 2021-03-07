@@ -595,8 +595,8 @@ case 'timer':
                                         if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
-					anu = await fetchJson(`https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&title=${tels}`, {method: 'get'})
-					reply(anu.extract)
+					wiki = await fetchJson(`https://api.duckduckgo.com/?q=${tels}&format=json&pretty=1&no_html=1&skip_disambig=1`, {method: 'get'})
+					reply(wiki.Result)
 					break	
 			       case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
