@@ -602,6 +602,60 @@ case 'timer':
             console.error(err);
             return ReE(res, err.message, 500);
         })
+					/*
+	edit.js
+
+	MediaWiki API Demos
+	Demo of `Login` module: Sending post request to login
+
+	MIT license
+*/
+
+var request = require( 'request' ).defaults( { jar: true } ),
+	url = 'https://test.wikipedia.org/w/api.php';
+
+// Step 1: GET request to fetch login token
+function getLoginToken() {
+	var params = {
+		action: 'query',
+		meta: 'tokens',
+		type: 'login',
+		format: 'json'
+	};
+
+	request.get( { url: url, qs: params }, function ( error, res, body ) {
+		var data;
+		if ( error ) {
+			return;
+		}
+		data = JSON.parse( body );
+		loginRequest( data.query.tokens.logintoken );
+	} );
+}
+
+// Step 2: POST request to log in.
+// Use of main account for login is not
+// supported. Obtain credentials via Special:BotPasswords
+// (https://www.mediawiki.org/wiki/Special:BotPasswords) for lgname & lgpassword
+function loginRequest( loginToken ) {
+	var params = {
+		action: 'login',
+		lgname: 'Matheus_Bot',
+		lgpassword: 'matgamer1',
+		lgtoken: bqcpvs7lbbhtke16o6a44mmsmc7eu5jv,
+		format: 'json'
+	};
+
+	request.post( { url: url, form: params }, function ( error, res, body ) {
+		if ( error ) {
+			return;
+		}
+		console.log( body );
+	} );
+}
+
+// Start From Step 1
+getLoginToken();
 			                break
 			                case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
