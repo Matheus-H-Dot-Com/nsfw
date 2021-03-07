@@ -592,18 +592,12 @@ case 'timer':
 				case 'pesquisar':
 				case 'p':
 				case 'wiki':
-                                       def PesquisarWikipedia(self, keyword):
-                                       try:
-                                       wikipedia.set_lang("pt")  # Defina antes
-                                       pesquisa = wikipedia.summary(keyword, sentences=5)
-                                       wikiaprenda = [keyword, str(pesquisa)]
-                                      self.bot.train(wikiaprenda)
-                                      except:
-                                      pesquisa = 'Termo não encontrado, tente outro'
-                                      self.caixa_de_mensagem.send_keys('*{}*:{}'.format(self.nome,pesquisa))
-                                      self.botao_enviar = self.driver.find_element_by_class_name('_35EW6')
-                                      self.botao_enviar.click()
-		                        break
+                                        if (args.length < 1) return reply('digite palavras-chave')
+					tels = body.slice(6)	
+                                        if (!isUser) return reply(mess.only.daftarB)				
+					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exlimit=1&explaintext&titles=${tels}`, {method: 'get'})
+					reply(anu.extract)
+					break	
 			       case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(8)		
