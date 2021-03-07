@@ -591,6 +591,7 @@ case 'timer':
 				case 'pesquisa':
 				case 'pesquisar':
 				case 'p':
+				case 'wiki':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
