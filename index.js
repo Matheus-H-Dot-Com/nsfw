@@ -596,6 +596,7 @@ case 'timer':
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
 					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`, {method: 'getJSON'})
+					var obj = JSON.parse(anu);
 					reply(anu.Text)
 		                        break
 			                case 'pesquisaen':
