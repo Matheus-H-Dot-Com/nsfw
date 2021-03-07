@@ -597,7 +597,6 @@ case 'timer':
                                         if (!isUser) return reply(mess.only.daftarB)				
 					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`, {method: 'get'})
     var base = 'https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=';
-    request(base + query, function (error, response, body) {
         body = JSON.parse(body)  
 
         if(body["Abstract"] == ""){
