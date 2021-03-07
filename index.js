@@ -613,7 +613,8 @@ case 'timer':
       });
 
 }
-			{
+		}
+		                        break
 			                case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(8)		
