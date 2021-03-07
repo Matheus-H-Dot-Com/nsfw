@@ -595,7 +595,7 @@ case 'timer':
                                         if (args.length < 1) return reply('digite palavras-chave')
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
-					wiki = await fetchJson(`https://api.duckduckgo.com/?q=${tels}&format=json&pretty=1&no_html=1&skip_disambig=1`, {method: 'getJSON'})
+					wiki = var response = (`https://api.duckduckgo.com/?q=${tels}&format=json&pretty=1&no_html=1&skip_disambig=1`, {method: 'get'})
 					const obj = JSON.parse(wiki);
 					reply(wiki.Result)
 					break	
