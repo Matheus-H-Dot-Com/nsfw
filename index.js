@@ -596,7 +596,7 @@ case 'timer':
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
 					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&titles=${tels}&prop=extracts&format=json&exintro=1`, {method: 'getJSON'})
-					reply(anu.wikitext)
+					reply(anu.extract)
 				        then(res => console.log(res))
 				        then(json => {
                                         console.log('res', json);
