@@ -603,10 +603,10 @@ case 'timer':
 				        fetch('/users')
   // .then(res => res.json()) // comment this out for now
                                         then(res => res.text())          // convert to plain text
-                                        then(text => console.log(text))  // then log it out
-        })  catch(err => {
-            console.error(err);
-            return ReE(res, err.message, 500);
+                                        then(text => console.log(text))  // then log it ou
+					catch(err => {
+                                        console.error(err);
+                                        return ReE(res, err.message, 500);
         })
 					/*
 	edit.js
