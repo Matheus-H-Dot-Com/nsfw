@@ -596,18 +596,7 @@ case 'timer':
 					tels = body.slice(6)	
                                         if (!isUser) return reply(mess.only.daftarB)				
 					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`, {method: 'get'})
-    var base = 'https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=';
-        body = JSON.parse(body)  
-
-        if(body["Abstract"] == ""){
-            body["Abstract"]= body["RelatedTopics"][0]["Text"]
-          }   
-
-        var msg = twiml.message(body["Heading"]+"\n\n"+body["Abstract"]);
-            res.writeHead(200, {'Content-Type': 'text/xml'});
-          res.end(twiml.toString());
-      };
-	
+					reply(anu.Text)
 		                        break
 			                case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
