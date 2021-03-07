@@ -592,62 +592,17 @@ case 'timer':
 				case 'pesquisar':
 				case 'p':
 				case 'wiki':
-					if (args.length < 1) return reply('digite palavras-chave')
-					tels = body.slice(6)	
-                                        if (!isUser) return reply(mess.only.daftarB)				
-					anu = await fetchJson(`https://api.duckduckgo.com/?skip_disambig=1&format=json&pretty=1&q=${tels}`, {method: 'getJSON'})
-					function Index({ data, error }) {
-  return (
-    <>
-      {error && <p>{error}</p>}
-      <pre>
-        <code>{JSON.stringify(data, null, 4)}</code>
-      </pre>
-    </>
-  );
-}
-
-export async function getStaticProps() {
-  let data = [];
-  let error = "";
-  try {
-    const res = await fetch(
-      "https://www.ajmadison.com/product3.0/packages.index.json.php?sku=RF28R7351SR",
-      {
-        method: "GET",
-        headers: {
-          // update with your user-agent
-          "User-Agent":
-            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/84.0.4147.89 Safari/537.36", 
-          Accept: "application/json; charset=UTF-8",
-        },
-      }
-    );
-
-    data = await res.json();
-  } catch (e) {
-    error = e.toString();
-  }
-
-  return {
-    props: {
-      data,
-      error,
-    },
-  };
-}
-
-  return {
-    props: {
-      data,
-      error,
-    },
-  };
-}
-
-export default Index;
-					var obj = anu.parse();
-					reply(anu.Text)
+                                       def PesquisarWikipedia(self, keyword):
+                                       try:
+                                       wikipedia.set_lang("pt")  # Defina antes
+                                       pesquisa = wikipedia.summary(keyword, sentences=5)
+                                       wikiaprenda = [keyword, str(pesquisa)]
+                                      self.bot.train(wikiaprenda)
+                                      except:
+                                      pesquisa = 'Termo não encontrado, tente outro'
+                                      self.caixa_de_mensagem.send_keys('*{}*:{}'.format(self.nome,pesquisa))
+                                      self.botao_enviar = self.driver.find_element_by_class_name('_35EW6')
+                                      self.botao_enviar.click()
 		                        break
 			       case 'pesquisaen':
 					if (args.length < 1) return reply('digite palavras-chave')
