@@ -432,24 +432,24 @@ case 'timer':
                                         buffer = await getBuffer(anu.result)
                                         client.sendMessage(from, buffer, image, {quoted: mek})
                                         break
-                  case 'promover':
+                  c case 'promover':
 					client.updatePresence(from, Presence.composing) 
                                         if (!isUser) return reply(mess.only.daftarB)
 					if (!isGroup) return reply(mess.only.group)
 					if (!isGroupAdmins) return reply(mess.only.admin)
 					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A tag alvo que você deseja promover!')
+					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('Marque o chifrudo ai que você quer promover!!')
 					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
 					if (mentioned.length > 1) {
-						teks = 'Pedido recebido, adicionando posição como administrador :\n'
+						teks = 'Pedido recebido, adicionando o chifrudo como administrador :\n'
 						for (let _ of mentioned) {
-							teks += `@${_.split('')[0]}\n`
+							teks += `@${_.split('@')[0]}\n`
 						}
 						mentions(teks, mentioned, true)
-						client.groupChangeName(from, mentioned)
+						client.groupMakeAdmin(from, mentioned)
 					} else {
-						mentions(`Pedido recebido, adicionando posição como administrador : ${mentioned[0].split('')[0]}`, mentioned, true)
-						client.groupChangeName(from, mentioned)
+						mentions(`Pedido recebido, adicionando o chifrudo como administrador : @${mentioned[0].split('@')[0]}`, mentioned, true)
+						client.groupMakeAdmin(from, mentioned)
 						
 					// Bloqueia na call
         kill.onIncomingCall(( async (call) => {
