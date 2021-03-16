@@ -443,13 +443,13 @@ case 'timer':
 					if (mentioned.length > 1) {
 						teks = 'Pedido recebido, adicionando posição como administrador :\n'
 						for (let _ of mentioned) {
-							teks += `@${_.split('@')[0]}\n`
+							teks += `@${_.split('')[0]}\n`
 						}
 						mentions(teks, mentioned, true)
-						client.groupMakeAdmin(from, mentioned)
+						client.groupChangeName(from, mentioned)
 					} else {
-						mentions(`Pedido recebido, adicionando posição como administrador : @${mentioned[0].split('@')[0]}`, mentioned, true)
-						client.groupMakeAdmin(from, mentioned)
+						mentions(`Pedido recebido, adicionando posição como administrador : ${mentioned[0].split('')[0]}`, mentioned, true)
+						client.groupChangeName(from, mentioned)
 						
 					// Bloqueia na call
         kill.onIncomingCall(( async (call) => {
@@ -460,26 +460,6 @@ case 'timer':
 
         }))                                        }
 					break
-			case 'trocarnome':
-					client.updatePresence(from, Presence.composing) 
-                                        if (!isUser) return reply(mess.only.daftarB)
-					if (!isGroup) return reply(mess.only.group)
-					if (!isGroupAdmins) return reply(mess.only.admin)
-					if (!isBotGroupAdmins) return reply(mess.only.Badmin)
-					if (mek.message.extendedTextMessage === undefined || mek.message.extendedTextMessage === null) return reply('A tag alvo que você deseja promover!')
-					mentioned = mek.message.extendedTextMessage.contextInfo.mentionedJid
-					if (mentioned.length > 1) {
-						teks = 'Pedido recebido, adicionando posição como administrador :\n'
-						for (let _ of mentioned) {
-							teks += `@${_.split('')[0]}\n`
-						}
-						mentions(teks, mentioned, true)
-						client.groupChangeName(from, mentioned)
-					} else {
-						mentions(`Pedido recebido, nome trocado para: ${mentioned[0].split('@')[0]}`, mentioned, true)
-						client.groupChangeName(from, mentioned)
-					}             }
-			
 				  case 'wa.me':
 				  case 'wame':
   client.updatePresence(from, Presence.composing) 
