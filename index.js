@@ -494,7 +494,7 @@ case 'timer':
                   client.sendMessage(from, {displayname: "Matheus", vcard: vcard}, MessageType.contact, { quoted: mek})
                client.sendMessage(from, 'Aqui está o número do meu dono, salve depois',MessageType.text, { quoted: mek} )
                 break
-	case 'hidetag':
+	case 'berrante':
                 client.updatePresence(from, Presence.composing) 
                 if (!isUser) return reply(mess.only.daftarB)
                 if (!isGroup) return reply(mess.only.group)
@@ -506,7 +506,7 @@ case 'timer':
                 jids.push(adm.id.replace('c.us', 's.whatsapp.net'));
                  })
                  options = {
-                 text: teks,
+                 text: teks, chamando todos os gados!
                 contextInfo: {mentionedJid: jids},
                 quoted: mek
                 }
