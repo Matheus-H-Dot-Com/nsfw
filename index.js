@@ -506,7 +506,7 @@ case 'timer':
                 jids.push(adm.id.replace('c.us', 's.whatsapp.net'));
                  })
                  options = {
-                 text: teks, chamando todos os gados!
+                 text: teks, ALOO,GADOS!
                 contextInfo: {mentionedJid: jids},
                 quoted: mek
                 }
