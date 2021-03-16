@@ -506,11 +506,11 @@ case 'timer':
                 jids.push(adm.id.replace('c.us', 's.whatsapp.net'));
                  })
                  options = {
-                 text: teks, ALOO,GADOS!
+                 text: teks,
                 contextInfo: {mentionedJid: jids},
                 quoted: mek
                 }
-              await client.sendMessage(from, options, text)
+              await client.sendMessage(from,'CHAMANDO TODOS OS GADOS!' options, text)
                break
                                 case 'tiktokstalk':
 					try {
