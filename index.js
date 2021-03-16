@@ -392,6 +392,7 @@ case 'timer':
 					break
                                 case 'randomhentai':
                                 case 'hentai':
+					if (!isNsfw) return reply('❌ *Putaria ta off manow* ❌')
                                         gatauda = body.slice(6)
                                         if (!isUser) return reply(mess.only.daftarB)
                                         reply(mess.wait)
