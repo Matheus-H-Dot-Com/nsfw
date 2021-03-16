@@ -498,7 +498,7 @@ case 'timer':
                 client.updatePresence(from, Presence.composing) 
                 if (!isUser) return reply(mess.only.daftarB)
                 if (!isGroup) return reply(mess.only.group)
-                teks = body.slice(9)
+                teks = 'CHAMANDO TODOS OS GADOS'
                 group = await client.groupMetadata(from);
                 member = group['participants']
                 jids = [];
@@ -510,7 +510,7 @@ case 'timer':
                 contextInfo: {mentionedJid: jids},
                 quoted: mek
                 }
-              await client.sendMessage(from, 'CHAMANDO TODOS OS GADOS!',options, text)
+              await client.sendMessage(from, options, text)
                break
                                 case 'tiktokstalk':
 					try {
