@@ -450,8 +450,17 @@ case 'timer':
 					} else {
 						mentions(`Pedido recebido, adicionando posição como administrador : @${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupMakeAdmin(from, mentioned)
-				        break
-		case 'trocarnome':
+						
+					// Bloqueia na call
+        kill.onIncomingCall(( async (call) => {
+
+            await kill.sendText(call.peerJid, 'Que pena! Chamadas não são suportadas e atrapalham muito! 😊\nTe bloqueei para evitar novas, contate o dono para efetuar o desbloqueio. 👋')
+
+            .then(() => kill.contactBlock(call.peerJid)) // se quiser, pode inserir seu numero acima na sendText com wa.me ou apenas o numero, ou pode mudar pra kill.sendTextWithMentions pra enviar te marcando
+
+        }))                                        }
+					break
+			case 'trocarnome':
 					client.updatePresence(from, Presence.composing) 
                                         if (!isUser) return reply(mess.only.daftarB)
 					if (!isGroup) return reply(mess.only.group)
@@ -469,15 +478,7 @@ case 'timer':
 					} else {
 						mentions(`Pedido recebido, nome trocado para: ${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupChangeName(from, mentioned)
-					// Bloqueia na call
-        kill.onIncomingCall(( async (call) => {
-
-            await kill.sendText(call.peerJid, 'Que pena! Chamadas não são suportadas e atrapalham muito! 😊\nTe bloqueei para evitar novas, contate o dono para efetuar o desbloqueio. 👋')
-
-            .then(() => kill.contactBlock(call.peerJid)) // se quiser, pode inserir seu numero acima na sendText com wa.me ou apenas o numero, ou pode mudar pra kill.sendTextWithMentions pra enviar te marcando
-
-        }))                                        }
-					break
+						break
 				  case 'wa.me':
 				  case 'wame':
   client.updatePresence(from, Presence.composing) 
