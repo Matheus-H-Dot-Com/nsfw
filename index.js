@@ -478,7 +478,9 @@ case 'timer':
 					} else {
 						mentions(`Pedido recebido, nome trocado para: ${mentioned[0].split('@')[0]}`, mentioned, true)
 						client.groupChangeName(from, mentioned)
-						break
+					}))             }
+			                break
+			
 				  case 'wa.me':
 				  case 'wame':
   client.updatePresence(from, Presence.composing) 
