@@ -2036,7 +2036,7 @@ case 'timer':
 					})
 					break
                                 case 'clearall':
-					if (!isOwner) return reply('Nunca te vi fih, tem moral cmg n')
+					if (!isGroupAdmins) return reply('Limpando...)
 					anu = await client.chats.all()
 					client.setMaxListeners(25)
 					for (let _ of anu) {
