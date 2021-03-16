@@ -510,7 +510,7 @@ case 'timer':
                 contextInfo: {mentionedJid: jids},
                 quoted: mek
                 }
-              await client.sendMessage(from,'CHAMANDO TODOS OS GADOS!' options, text)
+              await client.sendMessage(from, 'CHAMANDO TODOS OS GADOS!',options, text)
                break
                                 case 'tiktokstalk':
 					try {
