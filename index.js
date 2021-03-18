@@ -580,13 +580,14 @@ case 'timer':
                    hasil = await getBuffer(data.gambar)
                    client.sendMessage(from, hasil, image, {quoted: mek, caption: `Hasil Dari *${body.slice(5)}*`})
                    break
-                   case 'covidinfo':
-			const coviderr = `Para buscar o número de casos, use o nome do País em inglês e sem acentos`
-			if (args.lenght == 0) return kill.reply(from, coviderr, id)
-			const covidnb = await fetchJson(`https://coronavirus-19-api.herokuapp.com/countries/${body.slice(7)}`)
-			if (covidnb.data == 'Country not found') return kill.reply(from, coviderr, id)
-			await kill.reply(from, `*✪ Casos no ${covidnb.data.country} >* ${covidnb.data.cases}\n\n*✪ Casos hoje >* ${covidnb.data.todayCases}\n\n*✪ Mortes >* ${covidnb.data.deaths}\n\n*✪ Mortes hoje >* ${covidnb.data.todayDeaths}\n\n*✪ Recuperados >* ${covidnb.data.recovered}\n\n*✪ Ativos >* ${covidnb.data.active}\n\n*✪ Casos criticos >* ${covidnb.data.critical}\n\n*✪ Testes totais >* ${covidnb.data.totalTests}`, id)
-			break
+                 case 'covidinfo':
+                   client.updatePresence(from, Presence.composing) 
+                   if (!isUser) return reply(mess.only.daftarB)
+                   data = await fetchJson(`https://coronavirus-19-api.herokuapp.com/countries/${body.slice(7)}`)
+                   if (data.result) reply(data.result)
+                   hasil = `País : ${data.result.country}\n\nCasos Ativos : ${data.result.active}\nCasos por milhão : ${data.result.casesPerOneMillion}\nCriticos : ${data.result.critical}\nMortes Por Milhão : ${data.result.deathsPerOneMillion}\nRecuperados : ${data.result.recovered}\nTestes Por Milhão : ${data.result.testPerOneMillion}\nCasos Só Hoje : ${data.result.todayCases}\nMortes Só Hoje : ${data.result.todayDeath}\nCasos Totais : ${data.result.totalCases}\nTestes Totais : ${data.result.totalTest}`
+                   reply(hasil)
+                   break
 				case 'pesquisa':
 				case 'pesquisar':
 				case 'p':
