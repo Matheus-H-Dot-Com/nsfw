@@ -1213,7 +1213,7 @@ case 'timer':
               client.updatePresence(from, Presence.composing) 
               if (!isUser) return reply(mess.only.daftarB)
                 random = `${Math.floor(Math.random() * 100)}`
-               hasil = `*${body.slice(1)}*\n\nVOCÊ DURA: : *${random}%* segundos na cama`
+               hasil = `*${body.slice(1)}*\n\nVOCÊ DURA: : *${random}* segundos na cama`
               reply(hasil)
                 break
 	    case 'quando':
