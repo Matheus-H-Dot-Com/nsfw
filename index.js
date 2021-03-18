@@ -581,13 +581,12 @@ case 'timer':
                    client.sendMessage(from, hasil, image, {quoted: mek, caption: `Hasil Dari *${body.slice(5)}*`})
                    break
                    case 'covidinfo':
-                   client.updatePresence(from, Presence.composing) 
-                   if (!isUser) return reply(mess.only.daftarB)
-                   data = await fetchJson(`https://arugaz.my.id/api/corona?country=${body.slice(7)}`)
-                   if (data.result) reply(data.result)
-                   hasil = `País : ${data.result.country}\n\nAtivo : ${data.result.active}\nCasos Por Milhão : ${data.result.casesPerOneMillion}\ncritical : ${data.result.critical}\nMortes Por Milhão : ${data.result.deathsPerOneMillion}\nRECUPERADOS : ${data.result.recovered}\ntestPerOneMillion : ${data.result.testPerOneMillion}\nCasos Diarios : ${data.result.todayCases}\nMortes Diarias : ${data.result.todayDeath}\nCasos Totais : ${data.result.totalCases}\nTestes Totais : ${data.result.totalTest}`
-                   reply(hasil)
-                   break
+			const coviderr = `Para buscar o número de casos, use o nome do País em inglês e sem acentos`
+			if (args.lenght == 0) return kill.reply(from, coviderr, id)
+			const covidnb = await axios.get(`https://coronavirus-19-api.herokuapp.com/countries/${body.slice(7)}`)
+			if (covidnb.data == 'Country not found') return kill.reply(from, coviderr, id)
+			await kill.reply(from, `*✪ Casos no ${covidnb.data.country} >* ${covidnb.data.cases}\n\n*✪ Casos hoje >* ${covidnb.data.todayCases}\n\n*✪ Mortes >* ${covidnb.data.deaths}\n\n*✪ Mortes hoje >* ${covidnb.data.todayDeaths}\n\n*✪ Recuperados >* ${covidnb.data.recovered}\n\n*✪ Ativos >* ${covidnb.data.active}\n\n*✪ Casos criticos >* ${covidnb.data.critical}\n\n*✪ Testes totais >* ${covidnb.data.totalTests}`, id)
+			break
 				case 'pesquisa':
 				case 'pesquisar':
 				case 'p':
