@@ -484,12 +484,6 @@ case 'timer':
                 if (!isUser) return reply(mess.only.daftarB)
                 client.sendMessage(from, data, image, {quoted: mek, caption: body.slice(8)})
                 break
-                case 'fml':
-                data = await fetchJson(`https://docs-jojo.herokuapp.com/api/fml`)
-                if (!isUser) return reply(mess.only.daftarB)
-                hasil = data.result.fml
-                reply(hasil)
-                break
               case 'dono':
                 case 'criador':
                   client.sendMessage(from, {displayname: "Matheus", vcard: vcard}, MessageType.contact, { quoted: mek})
@@ -1187,14 +1181,35 @@ case 'timer':
               client.updatePresence(from, Presence.composing) 
               if (!isUser) return reply(mess.only.daftarB)
                 random = `${Math.floor(Math.random() * 100)}`
-               hasil = `AI MENÓ, VO MANDAR O PAPO : *${body.slice(1)}*\n\nVOCÊ TEM: : *${random}%* DE NAMORAR ESSE ANO😳`
+               hasil = `AI MENÓ, VO MANDAR O PAPO : *${body.slice(1)}*\n\nVOCÊ TEM: : *${random}%* DE CHANCE DE NAMORAR ESSE ANO😳`
               reply(hasil)
                 break
-               case '%gay':
+               case 'peidou':
               client.updatePresence(from, Presence.composing) 
               if (!isUser) return reply(mess.only.daftarB)
                 random = `${Math.floor(Math.random() * 100)}`
-               hasil = `PORCERTAGEM DE GAYZISSE : *${body.slice(1)}*\n\nVOCÊ É: : *${random}%* gay... já desconfiava`
+               hasil = `*${body.slice(1)}*\n\nPeidou, credo`
+              reply(hasil)
+                break
+	       case '%sapatao':
+              client.updatePresence(from, Presence.composing) 
+              if (!isUser) return reply(mess.only.daftarB)
+                random = `${Math.floor(Math.random() * 100)}`
+               hasil = `PORCERTAGEM DE SAPATÃOZISSE : *${body.slice(1)}*\n\nVOCÊ É: : *${random}%* sapatão... vish`
+              reply(hasil)
+                break
+	       case '%gay':
+              client.updatePresence(from, Presence.composing) 
+              if (!isUser) return reply(mess.only.daftarB)
+                random = `${Math.floor(Math.random() * 100)}`
+               hasil = `PORCERTAGEM DE GAYZISSE : *${body.slice(1)}*\n\nVOCÊ É: : *${random}%* gay... já desconfiava mano`
+              reply(hasil)
+                break
+		case 'tempocama':
+              client.updatePresence(from, Presence.composing) 
+              if (!isUser) return reply(mess.only.daftarB)
+                random = `${Math.floor(Math.random() * 100)}`
+               hasil = `*${body.slice(1)}*\n\nVOCÊ DURA: : *${random}%* segundos na cama`
               reply(hasil)
                 break
 	    case 'quando':
@@ -1354,7 +1369,7 @@ case 'timer':
 	          if (!isUser) return reply(mess.only.daftarB)
                 reply(mess.wait)
                 play = body.slice(5)
-                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=apivinz`)
+                anu = await fetchJson(`https://api.zeks.xyz/api/ytplaymp3?q=${play}&apikey=BotWeA`)
                if (anu.error) return reply(anu.error)
                  infomp3 = `*Canção encontrada!!!*\nTitulo : ${anu.result.title}\nFonte : ${anu.result.source}\nTamanho : ${anu.result.size}\n\n*PERAE, TA ENVIANDO, N SPAMMA POHA!*`
                 buffer = await getBuffer(anu.result.thumbnail)
@@ -1367,7 +1382,7 @@ case 'timer':
                    anu = await fetchJson(`https://tobz-api.herokuapp.com/api/cuaca?wilayah=${tels}&apikey=BotWeA`, {method: 'get'})
                    if (!isUser) return reply(mess.only.daftarB)
                    if (anu.error) return reply(anu.error)
-                   hasil = ` *O lugar : ${anu.tempat}\nClima : ${anu.cuaca}\nVento : ${anu.angin}\nTemperatura : ${anu.suhu}\nUmidade : ${anu.kelembapan}`
+                   hasil = ` O lugar : ${anu.tempat} \nClima : ${anu.cuaca} \nVento : ${anu.angin} \nTemperatura : ${anu.suhu} \nUmidade : ${anu.kelembapan} \nGeral: ${anu.result} `
                    client.sendMessage(from, hasil, text, {quoted: mek})
                    break
                               case 'jogo':
