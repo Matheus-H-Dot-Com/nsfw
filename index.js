@@ -1479,7 +1479,7 @@ case 'timer':
 					client.sendMessage(from, 'Questão : *'+cantik+'*\n\nResponda : '+ tik+'%', text, { quoted: mek })
 					break
 				case 'personagem':
-				if (isUser) return reply(mess.only.daftarB)
+				if (!isUser) return reply(mess.only.daftarB)
 					watak = body.slice(1)
 					const wa =['Aqui nesse grupo, temos gays, cornos, BVs e burros']
 					const tak = wa[Math.floor(Math.random() * wa.length)]
