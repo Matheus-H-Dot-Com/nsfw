@@ -33,7 +33,7 @@ const help = (prefix) => {
       *ZUERA* :
 
 
-  ➡ ${prefix}%NAMORARESSEANO
+  ➡ ${prefix}chancesmenu
 
 
     【 *MAIS USADOS RECENTEMENTE* 】
