@@ -1241,7 +1241,7 @@ case 'timer':
 					break
                 case 'opengc':
                 case 'bukagc':
-				case 'abrirgc':
+				case 'abrirgp':
 				case 'abrirgrupo':
 					client.updatePresence(from, Presence.composing) 
 					if (!isGroup) return reply(mess.only.group)
