@@ -3,6 +3,7 @@ const chancesmenu = (prefix, pushname) => {
     ◪ *CHANCES E ZOEIRAS*
   │
   └─ ❏ ${prefix}peidou
+  └─ ❏ ${prefix}tamanhopinto
   └─ ❏ ${prefix}tempocama
   └─ ❏ ${prefix}%sapatao
   └─ ❏ ${prefix}%gay
