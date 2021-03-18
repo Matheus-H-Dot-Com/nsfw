@@ -6,7 +6,7 @@ const chancesmenu = (prefix, pushname) => {
   └─ ❏ ${prefix}tempocama
   └─ ❏ ${prefix}%sapatao
   └─ ❏ ${prefix}%gay
-  └─ ❏ ${prefix}%namor
+  └─ ❏ ${prefix}%namoraesseano
 
 
 }
