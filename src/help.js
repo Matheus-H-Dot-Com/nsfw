@@ -33,17 +33,7 @@ const help = (prefix) => {
       *ZUERA* :
 
 
-  ➡ ${prefix}%GADO
-   
-  ➡ ${prefix}%CORNO(A)
-
   ➡ ${prefix}%NAMORARESSEANO
-
-  ➡ ${prefix}%GAY
-  
-  ➡ ${prefix}travazap
-
-
 
 
     【 *MAIS USADOS RECENTEMENTE* 】
