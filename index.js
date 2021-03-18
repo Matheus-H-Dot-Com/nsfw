@@ -362,8 +362,8 @@ case 'timer':
 							break
 							case 'menuadmin':
 								client.sendMessage(from, menuadmin(prefix, sender), text, {quoted: mek})
-					case 'chanchesmenu':
-											client.sendMessage(from, chanchesmenu(prefix, sender), text, {quoted: mek})
+					case 'chancesmenu':
+											client.sendMessage(from, chancesmenu(prefix, sender), text, {quoted: mek})
 													break
 										break
 										case 'nsfwmenu':
