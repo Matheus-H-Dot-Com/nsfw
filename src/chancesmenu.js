@@ -11,4 +11,4 @@ const chancesmenu = (prefix, pushname) => {
 
 }
 
-exports.chancesmenu = chanchesmenu
+exports.chancesmenu = chancesmenu
