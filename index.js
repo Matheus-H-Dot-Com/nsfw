@@ -56,6 +56,7 @@ const { logomaker } = require('./database/menu/logomaker')
 const { nabutomenu } = require('./src/nabutomenu')
 const { menuadmin } = require('./src/menuadmin')
 const { nsfwmenu } = require('./src/nsfwmenu')
+const { chanchesmenu } = require('./src/chancesmenu')
 /*const { mediamenu } = require('./database/menu/mediamenu')
 const { educationmenu } = require('./database/menu/educationmenu')
 const { downloadermenu } = require('./database/menu/downloadermenu')
@@ -361,6 +362,9 @@ case 'timer':
 							break
 							case 'menuadmin':
 								client.sendMessage(from, menuadmin(prefix, sender), text, {quoted: mek})
+					case 'chanchesmenu':
+											client.sendMessage(from, chanchesmenu(prefix, sender), text, {quoted: mek})
+													break
 										break
 										case 'nsfwmenu':
 											client.sendMessage(from, nsfwmenu(prefix, sender), text, {quoted: mek})
