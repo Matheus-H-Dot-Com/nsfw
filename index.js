@@ -2178,3 +2178,4 @@ case 'timer':
                            }
 		}
 starts()
+		}
