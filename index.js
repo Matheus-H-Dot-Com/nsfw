@@ -344,7 +344,7 @@ axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
     conn.sendMessage(id, cep ,MessageType.text);
 })
 			}
-			{
+			        break
 				case 'ajuda':
                                  case 'gostoso':
 				case 'menu':
