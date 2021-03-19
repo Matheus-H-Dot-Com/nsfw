@@ -8,7 +8,6 @@
 * Change Arugaz prefix & Fix Fitnah & Fix Ping
 */
 const {
-    Mimetype,
     GroupSettingChange
 } = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
