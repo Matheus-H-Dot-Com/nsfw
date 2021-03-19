@@ -336,12 +336,12 @@ async function starts() {
        /******END OF FUNCTIONS INPUT******/
 			switch(command) {
 					
-				case 'cnpj':
-const aris = text.replace(/!cnpj /, "")
-axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
-	conn.sendMessage(id, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
-         let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *ATIVIDADE PRINCIPAL:* ${anu.atividade_principal[0].text} \n\n ➸ *DATA SITUAÇÃO:* ${anu.data_situacao}\n\n ➸ *TIPO:* ${anu.tipo} \n\n ➸ *NOME:* ${anu.nome} \n\n ➸ *UF:* ${anu.uf} \n\n ➸ *TELEFONE:* ${anu.telefone}\n\n ➸ *SITUAÇÃO:* ${anu.situacao} \n\n ➸ *BAIRRO:* ${anu.bairro} \n\n ➸ *RUA:* ${anu.logradouro} \n\n ➸ *NÚMERO :* ${anu.numero} \n\n ➸ *CEP :* ${anu.cep} \n\n ➸ *MUNICÍPIO:* ${anu.municipio} \n\n ➸ *PORTE:* ${anu.porte}\n\n ➸ *ABERTURA:* ${anu.abertura}\n\n ➸ *NATUREZA JURÍDICA:* ${anu.natureza_juridica} \n\n ➸ *FANTASIA:* ${anu.fantasia}\n\n ➸ *CNPJ:* ${anu.cnpj}\n\n ➸ *ÚLTIMA ATUALIZAÇÃO:* ${anu.ultima_atualizacao}\n\n ➸ *STATUS:* ${anu.status}\n\n ➸ *COMPLEMENTO:* ${anu.complemento}\n\n ➸ *EMAIL:* ${anu.email}\n\n *📌BY:May Bot* `;
-    conn.sendMessage(id, cep ,MessageType.text);
+				case 'cep':
+teks = body.slice(7)
+anu = await getBuffer(`https://viacep.com.br/ws/${teks}/json/`).then((res) => {
+	client.sendMessage(from, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
+         let cep = `*🔍CONSULTA REALIZADA🔍* \n\n ➸ *CEP:* ${anu.cep} \n\n ➸ *ENDEREÇO:* ${anu.logradouro}\n\n ➸ *COMPLEMENTO:* ${anu.complemento} \n\n ➸ *BAIRRO:* ${anu.bairro} \n\n ➸ *LOCALIDADE:* ${anu.localidade} \n\n ➸ *UF:* ${anu.uf}\n\n ➸ *DDD:* ${anu.ddd} \n\n *📌BY:May Bot* `;
+    client.sendMessage(from, cep ,MessageType.text);
 }) 
 }
 			switch(command) {
