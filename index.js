@@ -48,7 +48,6 @@ const { daftarvip } = require('./src/daftarvip')
 const { iklan } = require('./src/iklan')
 const { daftatvip } = require('./src/daftarvip')
 const { name, yt, replySet } = JSON.parse(fs.readFileSync('./database/json/setting.json'))
-const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
 /*const { xp } = require('./database/menu/xp')
 const { limit } = require('./database/menu/limit*/
 const apivhtear = 'apivhtear';
