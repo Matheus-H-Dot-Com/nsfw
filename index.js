@@ -41,7 +41,6 @@ const setiker = JSON.parse(fs.readFileSync('./src/stik.json'))
 const videonye = JSON.parse(fs.readFileSync('./src/video.json'))
 const audionye = JSON.parse(fs.readFileSync('./src/audio.json'))
 const imagenye = JSON.parse(fs.readFileSync('./src/image.json'))
-const fetch = require('node-fetch')
 const imageToBase64 = require('image-to-base64')
 const axios = require("axios");
 const tiktod = require('tiktok-scraper')
