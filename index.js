@@ -340,7 +340,7 @@ async function starts() {
 teks = body.slice(7)
 anu = await getBuffer(`https://viacep.com.br/ws/${teks}/json/`).then((res) => {
 	client.sendMessage(from, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)   
-         reply(`*🔍CONSULTA REALIZADA🔍*` `\n\n ➸` `*CEP:*` (anu.cep) `\n\n ➸` `*ENDEREÇO:*` (anu.logradouro)`\n\n ➸ ``*COMPLEMENTO:*` (anu.complemento) `\n\n ➸ ``*BAIRRO:* `(anu.bairro) `\n\n ➸`` *LOCALIDADE:*` (anu.localidade) `\n\n ➸` `*UF:*` (anu.uf)`\n\n ➸` `*DDD:*` `(anu.ddd)` `\n\n` `*📌BY:May Bot* `);
+         reply('*🔍CONSULTA REALIZADA🔍*' '\n\n ➸' '*CEP:*' (anu.cep) '\n\n ➸' '*ENDEREÇO:*' (anu.logradouro)'\n\n ➸ ''*COMPLEMENTO:*' (anu.complemento) '\n\n ➸ ''*BAIRRO:* '(anu.bairro) '\n\n ➸'' *LOCALIDADE:*' (anu.localidade) '\n\n ➸' '*UF:*' (anu.uf)'\n\n ➸' '*DDD:*' '(anu.ddd)' '\n\n' '*📌BY:May Bot* ');
     client.sendMessage(from, cep ,MessageType.text);
 }) 
 }
