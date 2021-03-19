@@ -760,7 +760,7 @@ case 'timer':
 					dtt.length > 600
 					? reply('Mucho texto kkkkk')
                                                : gtts.save(ranm, dtt, function() {
-						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
+						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c`, (err) => {
 							fs.unlinkSync(ranm)
 							if (err) return reply('Gagal om:(')
 							client.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
