@@ -338,7 +338,7 @@ async function starts() {
        /******END OF FUNCTIONS INPUT******/
 			switch(command) {
 					
-				case 'cnpj': {
+				case 'cnpj':
 const aris = text.replace(/!cnpj /, "")
 axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
 	conn.sendMessage(id, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
@@ -2176,6 +2176,9 @@ case 'timer':
 						console.log(color('[AVISO]','red'), 'Comando não registrado por:', color(sender.split('@')[0]))
 					}
                            }
+		} catch (e) {
+			console.log('Error : %s', color(e, 'red'))
 		}
+	})
+}
 starts()
-		}
