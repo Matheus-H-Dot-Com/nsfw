@@ -106,7 +106,6 @@ cr = '*Dark*'
 /*********** LOAD FILE ***********/
 const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
 const event = JSON.parse(fs.readFileSync('./database/json/event.json'))
-const _level = JSON.parse(fs.readFileSync('./database/user/level.json'))
 const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
 /*********** END LOAD ***********/
 const {
