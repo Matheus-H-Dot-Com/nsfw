@@ -8,29 +8,6 @@
 * Change Arugaz prefix & Fix Fitnah & Fix Ping
 */
 const {
-    botName,
-    ownerName,
-    BarBarKey,
-    XteamKey,
-    VhtearKey,
-    TobzKey,
-    ownerNumber,
-    botPrefix,
-    GrupLimitz,
-    UserLimitz,
-    CeerTod
-} = ngonsol            
-prefix = '.','!','#'
-blocked = []
-limitawal = '999999999'
-cr = '*Dark*'
-
-/*********** LOAD FILE ***********/
-const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
-const event = JSON.parse(fs.readFileSync('./database/json/event.json'))
-const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
-/*********** END LOAD ***********/
-const {
     WAConnection,
     MessageType,
     Presence,
@@ -61,7 +38,6 @@ const imgbb = require('imgbb-uploader')
 const lolis = require('lolis.life')
 const loli = new lolis()
 const speed = require('performance-now')
-const axios = require('axios').default;
 /******END OF NPM PACKAGE INPUT******/
 
 /******BEGIN OF JSON INPUT******/
@@ -79,7 +55,6 @@ const { logomaker } = require('./database/menu/logomaker')
 const { nabutomenu } = require('./src/nabutomenu')
 const { menuadmin } = require('./src/menuadmin')
 const { nsfwmenu } = require('./src/nsfwmenu')
-const { chancesmenu } = require('./src/chancesmenu')
 /*const { mediamenu } = require('./database/menu/mediamenu')
 const { educationmenu } = require('./database/menu/educationmenu')
 const { downloadermenu } = require('./database/menu/downloadermenu')
