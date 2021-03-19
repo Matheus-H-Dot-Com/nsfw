@@ -2177,5 +2177,4 @@ case 'timer':
 					}
                            }
 		}
-}
 starts()
