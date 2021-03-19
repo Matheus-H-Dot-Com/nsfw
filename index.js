@@ -7,7 +7,6 @@
 - What's New?
 * Change Arugaz prefix & Fix Fitnah & Fix Ping
 */
-const { color, bgcolor } = require('./lib/color')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
 const { pack } = require('./src/pack')
