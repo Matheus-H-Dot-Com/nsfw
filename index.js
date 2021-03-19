@@ -345,6 +345,7 @@ axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
 }) 
 }
 			{
+				break
 				case 'ajuda':
                                  case 'gostoso':
 				case 'menu':
