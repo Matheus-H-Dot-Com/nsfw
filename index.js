@@ -43,7 +43,6 @@ const audionye = JSON.parse(fs.readFileSync('./src/audio.json'))
 const imagenye = JSON.parse(fs.readFileSync('./src/image.json'))
 const imageToBase64 = require('image-to-base64')
 const axios = require("axios");
-const tiktod = require('tiktok-scraper')
 const { cekvip } = require('./src/cekvip')
 const { TobzApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
 const { VthearApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
