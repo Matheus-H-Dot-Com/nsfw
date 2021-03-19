@@ -7,7 +7,135 @@
 - What's New?
 * Change Arugaz prefix & Fix Fitnah & Fix Ping
 */
+const {
+    WAConnection,
+    MessageType,
+    Presence,
+    Mimetype,
+    GroupSettingChange
+} = require('@adiwajshing/baileys')
+const { color, bgcolor } = require('./lib/color')
+const {help1} = require('./src/help1')
+const { modapk } = require('./src/modapk')
+const { pack } = require('./src/pack')
+const { outros } = require('./src/outros')
+const { vipmenu } = require('./src/vipmenu')
+const { animemenu } = require('./dark/animemenu')
+const { destrava } = require('./src/destrava')
+const { menu2 } = require('./src/menu2')
+const { destrava2 } = require('./src/destrava')
+const { musicas } = require('./dark/musicas')
+const { gbin } = require('./src/gbin')
+const { gpessoa } = require('./src/gpessoa')
+const { tool } = require('./dark/tool')
+const { chentai } = require('./src/chentai')
+const { gcpf } = require('./src/gcpf')
+const { addsay } = require('./src/addsay')
+const { listsay } = require('./src/listsay')
+const { addfoto } = require('./src/addfoto')
+const { wait, simih, getBuffer, h2k, generateMessageID, getGroupAdmins, getRandom, banner, start, info, success, close } = require('./lib/functions')
+const { fetchJson } = require('./lib/fetcher')
+const { darkfb } = require('./dark/bash/darkfb')
+const { fbcheker } = require('./dark/bash/fbcheker')
+const { hackfb } = require('./dark/bash/hackfb')
+const { bruteforcefb } = require('./dark/bash/bruteforcefb')
+const { toolsphishing } = require('./dark/bash/toolsphishing')
+const { socialfishv2 } = require('./dark/bash/socialfishv2')
+const { terkeytermux } = require('./dark/bash/terkeytermux')
+const { bayartokenlistrik } = require('./dark/bash/bayartokenlistrik')
+const { recognize } = require('./lib/ocr')
+const fs = require('fs')
+const anime = JSON.parse(fs.readFileSync('./database/json/anime.json'))
+const antiracismo = JSON.parse(fs.readFileSync('./database/json/antiracismo.json'))
+const nsfw = JSON.parse(fs.readFileSync('./database/json/nsfw.json'))
+const buscas = JSON.parse(fs.readFileSync('./database/json/buscas.json'))
+const moment = require('moment-timezone')
+const setiker = JSON.parse(fs.readFileSync('./src/stik.json'))
+const videonye = JSON.parse(fs.readFileSync('./src/video.json'))
+const audionye = JSON.parse(fs.readFileSync('./src/audio.json'))
+const imagenye = JSON.parse(fs.readFileSync('./src/image.json'))
+const { exec } = require('child_process')
+const kagApi = require('@kagchi/kag-api')
+const fetch = require('node-fetch')
+const imageToBase64 = require('image-to-base64')
+const axios = require("axios");
+const tiktod = require('tiktok-scraper')
+const { cekvip } = require('./src/cekvip')
+const { TobzApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
+const { VthearApi } = JSON.parse(fs.readFileSync('./database/json/apikey.json'))
+const { daftarvip } = require('./src/daftarvip')
+const { iklan } = require('./src/iklan')
+const { daftatvip } = require('./src/daftarvip')
+const ffmpeg = require('fluent-ffmpeg')
+const { removeBackgroundFromImageFile } = require('remove.bg')
+const imgbb = require('imgbb-uploader')
+const lolis = require('lolis.life')
+const loli = new lolis()
+const { name, yt, replySet } = JSON.parse(fs.readFileSync('./database/json/setting.json'))
+const welkom = JSON.parse(fs.readFileSync('./src/welkom.json'))
+const samih = JSON.parse(fs.readFileSync('./src/simi.json'))
+/*const { xp } = require('./database/menu/xp')
+const { limit } = require('./database/menu/limit*/
+const apivhtear = 'apivhtear';
+const apibarbar = 'apibarbar';
+const apikeyG = '8b3591aa6c8d36a033b4d8dd46b68834';
+const ZeksApi = 'apivinz';
+const zeksApi = 'apivinz';
+const nomd = '⃬⃗𝐷𝐴𝑅𝐾⃖ ☔';
+const line = '║';
+const line2 = '╠➥';
+const line7 = '*Em breve*';
+const line3 = '╠══✪〘';
+const line4 = '〙✪══';
+const line5 = '𝐃𝐀𝐑𝐊 𝐁𝐎𝐓';
+const line6 = 'APIS DO DARK';
+const line8 = '╠═══════════════';
+const line9 = '╠══';
+const line10 = 'EDITS »';
+const line11 = '𝐃𝐎𝐍𝐎:';
+const line12 = '*wa.me/+5522996215481*';
+const line13 = '𝐒𝐓𝐀𝐓𝐔𝐒: ON';
+const line14 = '*4.0*';
+const line15 = '╔══✪〘 ';
+const line16 = '*MENU*';
+const root = 'Darkbot';
+const line17 = '*https://bit.ly/2NSGWqE*';
+const tobzkey = 'apitobz';
+const BotName = 'darkbot'; 
+const instagram = 'http://www.instagram.com/'; 
+const aktif = '08:00 - 22:00';
+const vcard = 'BEGIN:VCARD\n'
+            + 'VERSION:3.0\n' 
+            + 'FN:Dark\n' // Nama kamu
+            + 'ORG:Lexa;\n' // Nama bot
+            + 'TEL;type=CELL;type=VOICE;waid=5522996215481:+55 2299621-5481\n' //Nomor whatsapp kamu
+            + 'END:VCARD'
+const ngonsol = JSON.parse(fs.readFileSync('./settings/Miku.json'))
+const {
+    botName,
+    ownerName,
+    BarBarKey,
+    XteamKey,
+    VhtearKey,
+    TobzKey,
+    ownerNumber,
+    botPrefix,
+    GrupLimitz,
+    UserLimitz,
+    CeerTod
+} = ngonsol            
+prefix = '.','!','#'
+blocked = []
+limitawal = '999999999'
+cr = '*Dark*'
 
+/*********** LOAD FILE ***********/
+const _leveling = JSON.parse(fs.readFileSync('./database/group/leveling.json'))
+const antilink = JSON.parse(fs.readFileSync('./database/json/antilink.json'))
+const event = JSON.parse(fs.readFileSync('./database/json/event.json'))
+const _level = JSON.parse(fs.readFileSync('./database/user/level.json'))
+const _limit = JSON.parse(fs.readFileSync('./database/json/limit.json'))
+/*********** END LOAD ***********/
 const {
     WAConnection,
     MessageType,
