@@ -7,9 +7,6 @@
 - What's New?
 * Change Arugaz prefix & Fix Fitnah & Fix Ping
 */
-const {
-    GroupSettingChange
-} = require('@adiwajshing/baileys')
 const { color, bgcolor } = require('./lib/color')
 const {help1} = require('./src/help1')
 const { modapk } = require('./src/modapk')
