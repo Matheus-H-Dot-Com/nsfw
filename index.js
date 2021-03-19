@@ -760,11 +760,10 @@ case 'timer':
 					rano = getRandom('.ogg')
 					dtt.length > 600
 					? reply('Mucho texto kkkkk')
-					: gtts.save(ranm, dtt, function() {
 						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
 							buff = fs.readFileSync(rano)
-							if (err) return reply('Vish cleitin, deu falha aqui:(')
+							if (err) return reply('Deu erro aqui man:(')
 							client.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 							fs.unlinkSync(rano)
 						})
