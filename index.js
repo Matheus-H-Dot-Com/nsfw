@@ -8,7 +8,6 @@
 * Change Arugaz prefix & Fix Fitnah & Fix Ping
 */
 const {
-    WAConnection,
     MessageType,
     Presence,
     Mimetype,
