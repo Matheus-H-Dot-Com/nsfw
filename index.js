@@ -336,7 +336,9 @@ async function starts() {
 			if (!isCmd && isGroup) console.log('\x1b[1;31m~\x1b[1;37m>', '[\x1b[1;31mRECV\x1b[1;37m]', time, color('Message'), 'from', color(sender.split('@')[0]), 'in', color(groupName), 'args :', color(args.length))
  
        /******END OF FUNCTIONS INPUT******/
-if (text.includes("cnpj")){
+			switch(command) {
+					
+				case 'cnpj': {
 const aris = text.replace(/!cnpj /, "")
 axios.get(`https://www.receitaws.com.br/v1/cnpj/${aris}`).then((res) => {
 	conn.sendMessage(id, '[❗] ESPERE ESTOU BUSCANDO DADOS', MessageType.text)
