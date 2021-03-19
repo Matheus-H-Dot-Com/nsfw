@@ -757,12 +757,14 @@ case 'timer':
 					if (args.length < 2) return client.sendMessage(from, 'Cadê o texto', text, {quoted: mek})
 					dtt = body.slice(8)
 					ranm = getRandom('.mp3')
+					rano = getRandom('.ogg')
 					dtt.length > 600
 					? reply('Mucho texto kkkkk')
                                                : gtts.save(ranm, dtt, function() {
-						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c`, (err) => {
+						exec(`ffmpeg -i ${ranm} -ar 48000 -vn -c:a libopus ${rano}`, (err) => {
 							fs.unlinkSync(ranm)
-							if (err) return reply('Gagal om:(')
+							buff = fs.readFileSync(rano)
+							if (err) return reply('Erro :(')
 							client.sendMessage(from, buff, audio, {quoted: mek, ptt:true})
 							fs.unlinkSync(rano)
 						})
