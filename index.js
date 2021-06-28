@@ -549,23 +549,12 @@ case 'timer':
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 				case 'pesq':
-					function htmlToText(html) {
-   let tempDiv = document.createElement("div");
-   tempDiv.innerHTML = html;
-   return tempDiv.textContent || tempDiv.innerText || "";
-}
-$.getJSON(url, function(data) {
-  const html = data['parse']['text'];
-  const plainText = htmlToText(html);
-  const array = [...plainText.matchAll(/^\d{4} *–.*/gm)].map(x=>x[0]);
-  console.log(array);
-});
-					var gh = body.slice(5)
+					var gh = body.slice(6)
 					if (args.length < 1) return reply(`Enviar pedidos ${prefix}marvellogo texto, por exemplo ${prefix}marvellogo MatheusBOT`)
                                         if (!isUser) return reply(mess.only.daftarB)
 					reply(mess.wait)
-					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?action=query&list=search&srsearch=${gh}&format=json`, {method: 'get'})
-					buffer = await getBuffer(anu.verses)
+					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=${gh}`, {method: 'get'})
+					buffer = await getBuffer(anu.extract)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 
