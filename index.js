@@ -548,13 +548,15 @@ case 'timer':
 					buffer = await getBuffer(anu.result)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
-				case 'marvellogo':
-					var gh = body.slice(12)
+				case 'biblia':
+					var g1 = body.slice(8)
+					var sl = body.slice(12)
+					var num = body.slice(16)
 					if (args.length < 1) return reply(`Enviar pedidos ${prefix}marvellogo texto, por exemplo ${prefix}marvellogo MatheusBOT`)
                                         if (!isUser) return reply(mess.only.daftarB)
 					reply(mess.wait)
-					anu = await fetchJson(`https://tobz-api.herokuapp.com/api/textpro?theme=snow&text=${gh}&apikey=BotWeA`, {method: 'get'})
-					buffer = await getBuffer(anu.result)
+					anu = await fetchJson(`https://www.abibliadigital.com.br/api/verses/${g1}/${s1}/${num}`, {method: 'get'})
+					buffer = await getBuffer(anu.verses)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 
