@@ -554,9 +554,6 @@ case 'timer':
    tempDiv.innerHTML = html;
    return tempDiv.textContent || tempDiv.innerText || "";
 }
-
-const url = 'https://pt.wikipedia.org/w/api.php?action=query&list=search&srsearch=${gh}&format=json';
-
 $.getJSON(url, function(data) {
   const html = data['parse']['text'];
   const plainText = htmlToText(html);
