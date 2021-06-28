@@ -555,7 +555,7 @@ case 'timer':
 					if (args.length < 1) return reply(`Enviar pedidos ${prefix}marvellogo texto, por exemplo ${prefix}marvellogo MatheusBOT`)
                                         if (!isUser) return reply(mess.only.daftarB)
 					reply(mess.wait)
-					anu = await fetchJson(`https://www.abibliadigital.com.br/api/verses/${g1}/${s1}/${num}`, {method: 'get'})
+					anu = await fetchJson(`https://www.abibliadigital.com.br/api/verses/${g1}/${sl}/${num}`, {method: 'get'})
 					buffer = await getBuffer(anu.verses)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
