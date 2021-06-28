@@ -549,9 +549,10 @@ case 'timer':
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
 				case 'biblia':
-					var g1 = body.slice(8)
-					var sl = body.slice(12)
-					var num = body.slice(16)
+					var gh = body.slice(8)
+					var g1 = gh.split("|")[0];
+					var sl = gh.split("|")[2];
+					var num = gh.split("|")[3];
 					if (args.length < 1) return reply(`Enviar pedidos ${prefix}marvellogo texto, por exemplo ${prefix}marvellogo MatheusBOT`)
                                         if (!isUser) return reply(mess.only.daftarB)
 					reply(mess.wait)
