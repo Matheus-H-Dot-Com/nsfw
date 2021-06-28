@@ -553,7 +553,7 @@ case 'timer':
 					if (args.length < 1) return reply(`Enviar pedidos ${prefix}marvellogo texto, por exemplo ${prefix}marvellogo MatheusBOT`)
                                         if (!isUser) return reply(mess.only.daftarB)
 					reply(mess.wait)
-					anu = await fetchJson(`https://pt.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro=&explaintext=&titles=${gh}`, {method: 'get'})
+					anu = await fetchJson(`https://en.wikipedia.org/w/api.php?format=json&action=query&prop=extracts&exintro&explaintext&redirects=1&titles=${gh}`, {method: 'get'})
 					buffer = await getBuffer(anu.extract)
 					client.sendMessage(from, buffer, image, {quoted: mek})
 					break
